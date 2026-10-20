@@ -13,5 +13,17 @@ def determine_house_by_confidence(confidence):
     # TODO: Write your if / elif / else logic here.
     # Use comparison operators (>, <, ==, >=, <=) only.
     # You should not need and / or for this challenge.
+    if confidence > -1 and confidence < 4:
+        return "Slytherin"
+    elif confidence > 3 and confidence < 6:
+        return "Hufflepuff"
+    elif confidence > 5 and confidence < 8:
+        return "Ravenclaw"
+    elif confidence > 7 and confidence < 11:
+        return "Gryffindor"
+    else:
+        return "Invalid score"
+    
+
     pass
     # Remember to return values/variables rather than printing them
